@@ -1,31 +1,32 @@
 <html lang="tr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOTTA</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <div class="logo">Motta</div>
-            <nav class="nav-links">
+        <div class="header-container">
+            <div class="logo">
+                Motta
+            </div>
+            <div class="nav-links">
                 <a href="#">Demos</a>
                 <a href="#">Mobile-First</a>
                 <a href="#">Features</a>
                 <a href="#">Documentation</a>
-            </nav>
-            <button class="buy-button">Buy Motta</button>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
-        </header>
-
-        <main class="main-content">
+            <div>
+                <button class="buy-button">
+                    Buy Motta
+                </button>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="main-container">
             <div class="text-section">
                 <h1>Create Your Dream Online Store</h1>
                 <p>Motta a Multivendor & Marketplace Wordpress Theme</p>
@@ -35,22 +36,31 @@
                 </div>
             </div>
             <div class="image-section">
-                <img src="airpods-mockup.png" alt="AirPods Max mockup">
+                <img src="assets/img/image.jpg" alt="AirPods Max mockup">
             </div>
-        </main>
-        <footer class="footer-logos">
-            <img src="wordpress-logo.png" alt="WordPress">
-            <img src="elementor-logo.png" alt="Elementor">
-            <img src="woocommerce-logo.png" alt="WooCommerce">
-        </footer>
+        </div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <span>Motta is fully compatible with Elemantor & WooCommerce</span>
+            </div>
+            <div class="footer-logos">
+                <img src="/assets/img/wordpress.png" alt="WordPress">
+                <img src="/assets/img/elemantor.png" alt="Elementor">
+                <img src="/assets/img/woocommerce.png" alt="WooCommerce">
+            </div>
+            <div class="footer-button">
+                <button><i class="fa-regular fa-comment"></i></button>
+            </div>
+        </div>
     </div>
+    <script src="https://kit.fontawesome.com/6633b60749.js" crossorigin="anonymous"></script>
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        hamburgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
-<script>
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
-    hamburgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-</script>
 
 </html>
