@@ -106,7 +106,6 @@ body {
 .footer-container {
     justify-content: space-between;
     background-color: #333;
-    justify-content: center;
     flex-direction: row;
     align-items: center;
     position: relative;
