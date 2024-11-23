@@ -70,6 +70,10 @@ body {
     color: #444;
 }
 
+.buttons {
+    margin-top: 20px;
+}
+
 .get-started,
 .explore-features {
     padding: 10px 20px;
